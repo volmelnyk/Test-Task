@@ -15,6 +15,7 @@ namespace WebApplication1.Controllers
         {
             List<string> dataDB = new List<string>();
 
+            
             foreach (var item in db.Nodes.ToList())
             {
                 dataDB.Add(Reverse(item.Sentence));
