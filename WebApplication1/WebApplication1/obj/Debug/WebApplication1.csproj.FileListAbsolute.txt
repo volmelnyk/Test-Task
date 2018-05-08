@@ -183,7 +183,6 @@ C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1
 C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
-C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll

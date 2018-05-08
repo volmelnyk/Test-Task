@@ -23,11 +23,14 @@ namespace WebApplication1.Controllers
             return View(dataDB);
         }
 
-        public string Reverse(string s)
+        public string Reverse(string input)
         {
-            char[] charArray = s.ToCharArray();
-            Array.Reverse(charArray);
-            return new string(charArray);
+            string[] words = input.Split();
+            for (int i = 0; i < words.Length; i++)
+            {
+                words[i] = new string(words[i].Reverse().ToArray());
+            }
+            return string.Join(" ", words);
         }
 
         [HttpPost]
