@@ -41,7 +41,7 @@ namespace WebApplication1.Controllers
                         var line = read.ReadToEnd().Split('.');
                         foreach (var item in line)
                         {
-                            if (item.Contains(keyWord))
+                            if (item.Contains(" "+keyWord+ " "))
                             {
                                 db.Nodes.Add(new Node(Reverse(item)));
                                 db.SaveChanges();
