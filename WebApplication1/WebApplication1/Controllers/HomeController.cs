@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.IO;
+using System.Text;
 
 namespace WebApplication1.Controllers
 {
@@ -36,15 +37,15 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public ActionResult Index(HttpPostedFileBase file, string keyWord)
         {
-            if (file != null)
-                try
-                {
-                    using (StreamReader read = new StreamReader(file.InputStream))
+                    var fileName = Path.GetFileName(file.FileName);
+                    string path = Path.Combine(Server.MapPath("~/Content/"), fileName);
+                    file.SaveAs(path);
+                    using (StreamReader read = new StreamReader(path))
                     {
                         var line = read.ReadToEnd().Split('.');
                         foreach (var item in line)
                         {
-                            if (item.Contains(" "+keyWord+ " "))
+                            if (item.Contains(keyWord))
                             {
                                 db.Nodes.Add(new Node(Reverse(item)));
                                 db.SaveChanges();
@@ -52,15 +53,9 @@ namespace WebApplication1.Controllers
                         }
 
                     }
-                }
-                catch (Exception ex)
-                {
-                    ViewBag.Message = "ERROR:" + ex.Message.ToString();
-                }
-            else
-            {
-                ViewBag.Message = "Ви не вибрали файл!";
-            }
+            System.IO.File.Delete(path);
+
+
 
             List<string> dataDB = new List<string>();
 

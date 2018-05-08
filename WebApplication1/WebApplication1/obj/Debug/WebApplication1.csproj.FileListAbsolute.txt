@@ -187,3 +187,4 @@ C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1
 C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Володя\Documents\GitHub\Test-Task\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
